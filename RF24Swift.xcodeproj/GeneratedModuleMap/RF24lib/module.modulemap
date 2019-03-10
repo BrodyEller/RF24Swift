@@ -1,0 +1,4 @@
+module RF24lib {
+    umbrella "/home/pi/Desktop/RF24Swift/Sources/RF24lib/include"
+    export *
+}
