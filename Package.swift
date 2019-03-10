@@ -8,8 +8,8 @@ let package = Package(
   products: [
     // Products define the executables and libraries produced by a package, and make them visible to other packages.
     .library(
-      name: "RF24lib",
-      targets: ["RF24lib"]),
+      name: "rf24",
+      targets: ["rf24"]),
     .library(
       name: "RF24Swift",
       targets: ["RF24Swift"]),
@@ -22,10 +22,10 @@ let package = Package(
     // Targets are the basic building blocks of a package. A target can define a module or a test suite.
     // Targets can depend on other targets in this package, and on products in packages which this package depends on.
     .target(
-      name: "RF24lib"),
+      name: "rf24"),
     .target(
       name: "RF24Swift",
-      dependencies: ["RF24lib"]),
+      dependencies: ["rf24"]),
     .testTarget(
       name: "RF24SwiftTests",
       dependencies: ["RF24Swift"]),
